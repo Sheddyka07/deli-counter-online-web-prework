@@ -29,7 +29,7 @@ def now_serving(katz_deli)
     puts "There is nobody waiting to be served!"
   else 
     puts "Currently serving #{katz_deli[0]}." #calls to first person in current array 
-    katz_deli.shift #shift removes first person in line
+    katz_deli.shift #shift removes first person in line, unshift would be butting in line
   end
 end
     
