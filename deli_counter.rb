@@ -19,17 +19,17 @@ end
 end
 
 def take_a_number(katz_deli, name)
-  katz_deli.push(name)
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+  katz_deli.push(name) #push adds to the end 
+  puts "Welcome, #{name}. You are number #{katz_deli.length} in line." #this code is simple, just tells each new customer how many people are in line ahead of them (tells last person the total number in line)
 end
 
   
 def now_serving(katz_deli)
-  if katz_deli.empty? 
+  if katz_deli.empty? #same as "katz_deli.length == 0"
     puts "There is nobody waiting to be served!"
   else 
-    puts "Currently serving #{katz_deli[0]}."
-    katz_deli.shift
+    puts "Currently serving #{katz_deli[0]}." #calls to first person in current array 
+    katz_deli.shift #shift removes first person in line
   end
 end
     
